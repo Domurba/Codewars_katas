@@ -1,0 +1,19 @@
+#2021-10-13 08:24:40.579000+00:00
+"""Given the table below:
+
+** names table schema **
+* id
+* prefix
+* first
+* last
+* suffix
+
+Your task is to use a select statement to return a single column table containing the full title of the person (concatenate all columns together except id), as follows:
+
+** output table schema **
+* title
+
+Don't forget to add spaces."""
+
+SELECT concat_ws(' ', prefix, first, last, suffix) as title 
+from names

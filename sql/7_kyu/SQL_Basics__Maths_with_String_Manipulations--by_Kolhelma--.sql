@@ -1,0 +1,13 @@
+#2021-10-15 14:08:12.928000+00:00
+"""Given a demographics table in the following format:
+
+### demographics table schema
+
+* id
+* name
+* birthday
+* race
+
+return a single column named `calculation` where the value is the bit length of name, added to the number of characters in race."""
+
+SELECT bit_length(name) + length(race) as calculation FROM demographics
